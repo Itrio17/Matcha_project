@@ -152,3 +152,82 @@ input, button {
     right: 0;
     background-color: #fffbf7;
 }
+
+.features {
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+    height: 660px;
+    background-color: #025157;
+    padding: 5% 10%;
+}
+
+.features .feature-card {
+    background-color: #fff;
+    margin: 0 15px 30px;
+    border: 1p solid #dadada;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    overflow: hidden;
+}
+
+.features .feature-card .feature-content {
+    padding: 30px 20px 40px 40px;
+    flex: 2;
+}
+
+.features .feature-card .feature-content > * {
+    margin-bottom: 1rem;
+    margin-top: 0;
+}
+
+.features .feature-card .feature-img {
+    flex: 1;
+}
+
+.features .feature-card .feature-content img {
+    width: 50px;
+}
+
+.features .feature-card .feature-content figure {
+    margin-left: 0;
+}
+
+.features .feature-card .feature-content h3 {
+    font-size: 24px;
+    color: #343434;
+    font-weight: 400;
+}
+
+.features .feature-card .feature-content a {
+    font-size: 1rem;
+    color: #67b54b;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.features .feature-card .feature-content p {
+    font-size: 1rem;
+    color:  #7e7e7e;
+    font-weight: 400;
+}
+
+.features .feature-card .feature-img {
+    flex: 1;
+    position: relative;
+    width: 40%;
+    right: -50px;
+    height: 80%;
+    transition: right 1s;
+}
+
+.features .feature-card .feature-img:hover {
+    right: 0px;
+}
+
+.features .feature-card .feature-img figure,
+.features .feature-card .feature-img img {
+    margin-top: 0;
+    height: 100%;
+}
