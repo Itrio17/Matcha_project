@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 h1 {
     color: #025157;
     font-family: "Alegreya", serif;
@@ -26,7 +32,7 @@ button {
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;
     padding: 0px 20px;
-    margin-left: -10px;
+    margin-left: -20px;
 }
 
 form {
@@ -90,6 +96,7 @@ header > * {
 
 .actions > button  {
     width: 40%;
+    background-color: #67b54b;
 }
 
 
@@ -102,6 +109,14 @@ header > * {
     text-align: center;
     width: 70%;
     margin: 30px 0;
+}
+
+.try-it{
+    height: 100%;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
 }
 
 input{
@@ -134,11 +149,12 @@ input, button {
 
 .publish .publish-text {
     display: flex;
+    justify-content: space-around;
 }
 
 .publish .publish-text > p {
     color: #6b6f74b9;
-    margin-right: 40px;
+    margin-right: 20px;
 }
 
 .promo {
@@ -176,7 +192,7 @@ input, button {
 .features {
     display: grid;
     grid-template: repeat(2, 1fr) / repeat(2, 1fr);
-    height: 660px;
+    height: 710px;
     background-color: #025157;
     padding: 5% 10%;
 }
@@ -265,82 +281,19 @@ input, button {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgb(3, 81, 77)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
-
-@media (max-width: 425px) {
-
-.actions {
-    width: auto;
-}
-
-
-.main h1 {
-    font-size: 30px;
-}
-
-.main {
-    margin-top: 130px;
-}
-
-.banner > img{
-    width: 100%;
-}
-
-.promo {
-    flex-direction: column;
-    width: 90%;
-    margin-top: 20px;
-}
-
-.explanatory-video > video {
-    width: 100%;
-}
-
-.publish{
-    margin-top: 10px;
-}
-
-.publish h3 {
-    font-size: 25px;
-    line-height: 1.2;
-}
-
-.publish .publish-text {
-    flex-direction: column;
-}
-
-.publish .publish-text form {
-    height: 50px;
-    margin-top: 10px;
-}
-
-.publish .publish-text form > input,
-.publish .publish-text form > input {
-    width: 50%;
-}
-
-.features {
-    grid-template: repeat(4, 1fr) / 1fr;
-    padding-left: 0;
-    padding-right: 0;
-}
-.feature-img {
-    display: none;
-}
-
-}
-
-@media (min-width: 426px) and (max-width: 768px) {
-
-    .promo {
-        flex-direction: column;
-    }
-
-}
-
 .card-container {
     background-color: #a1d683;
     padding: 35px;
 }
+
+.card-container .container {
+    max-width: 1500px;
+}
+
+.p-2{
+    padding: 5% 0%;
+}
+
 .comments h1 {
     color: #025157;
     font-weight: bold;
@@ -472,4 +425,179 @@ input, button {
     font-weight: 600;
     padding: 12px 20px;
     width: 100%;
+}
+
+.how-matcha {
+    background-color: #fffbf7;
+    padding: 5% 10%;
+    text-align: center;
+}
+
+.how-matcha .title {
+    color: #025157;
+    font-size: 50px;
+    line-height: 60px;
+    font-weight: 900;
+    font-family: "Alegreya", serif;
+    margin-bottom: 8px;
+}
+
+.how-matcha .description {
+    max-width: 60%;
+    color: #46484c;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 0 auto;
+    margin-bottom: 16px;
+}
+
+.how-matcha .description a {
+    color: #67b54b;
+    text-decoration: none;
+}
+
+.how-matcha button {
+    font-size: 14px;
+    font-weight: 600;
+    padding-top: 12px 12px 6px 12px;
+    height: 45px;
+    margin-left: 0;
+    border-radius: 8px;
+    margin-top: 6px;
+}
+
+.how-matcha .steps {
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.how-matcha .steps .card-step {
+    background-color: #fff;
+    border: 1px solid #dadada;
+    border-radius: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: left;
+}
+
+.how-matcha .steps .card-step .card-step-image {
+    position: relative;
+    height: 350px;
+}
+
+.how-matcha .steps .card-step .card-step-image .card-step-bg {
+    width: 100%;
+    height: 100%;
+}
+
+.how-matcha .steps .card-step .card-step-image .card-step-icon {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    width: 21px;
+}
+
+.how-matcha .steps .card-step .card-step-body {
+    padding: 25px;
+}
+
+.how-matcha .steps .card-step .card-step-body h3 {
+    font-size: 30px;
+    line-height: 36px;
+    font-family: "Alegreya", serif;
+    color: #025157;
+    font-weight: 900;
+    text-align: center;
+}
+
+.how-matcha .steps .card-step .card-step-body p {
+    font-size: 15px;
+    line-height: 1.5;
+    color: #46484c;
+    font-weight: 400;
+    height: 85px;
+    margin-bottom: 16px;
+}
+
+.how-matcha .steps .card-step .card-step-body a {
+    font-size: 16px;
+    line-height: 1.4;
+    color: #67b54b;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+
+@media (max-width: 425px) {
+
+.actions {
+    width: auto;
+}
+
+
+.main h1 {
+    font-size: 30px;
+}
+
+.main {
+    margin-top: 130px;
+}
+
+.banner > img{
+    width: 100%;
+}
+
+.promo {
+    flex-direction: column;
+    width: 90%;
+    margin-top: 20px;
+}
+
+.explanatory-video > video {
+    width: 100%;
+}
+
+.publish{
+    margin-top: 10px;
+}
+
+.publish h3 {
+    font-size: 25px;
+    line-height: 1.2;
+}
+
+.publish .publish-text {
+    flex-direction: column;
+}
+
+.publish .publish-text form {
+    height: 50px;
+    margin-top: 10px;
+}
+
+.publish .publish-text form > input,
+.publish .publish-text form > input {
+    width: 50%;
+}
+
+.features {
+    grid-template: repeat(4, 1fr) / 1fr;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.feature-img {
+    display: none;
+}
+}
+
+
+@media (min-width: 426px) and (max-width: 768px) {
+
+    .promo {
+        flex-direction: column;
+    }
+
 }
